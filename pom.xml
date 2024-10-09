@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.gmssl</groupId>
-    <artifactId>GmSSLJNI</artifactId>
+    <artifactId>GmSSLJNI-Windows</artifactId>
     <version>3.1.1</version>
     <name>GmSSL-Java</name>
     <packaging>jar</packaging>
@@ -181,4 +181,16 @@
         </pluginRepository>
     </pluginRepositories>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>junpzx-custom-nexus</id>
+            <name>junpzx-custom-nexus-snapshots</name>
+            <url>https://repository.junpzx.cn/repository/maven-local-snapshot/</url>
+        </snapshotRepository>
+        <repository>
+            <id>junpzx-custom-nexus</id>
+            <name>junpzx-custom-nexus-releases</name>
+            <url>https://repository.junpzx.cn/repository/maven-local/</url>
+        </repository>
+    </distributionManagement>
 </project>
